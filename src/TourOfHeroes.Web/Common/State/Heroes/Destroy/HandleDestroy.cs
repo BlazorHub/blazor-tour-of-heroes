@@ -31,7 +31,7 @@ namespace TourOfHeroes.Web.Common.State.Heroes
             /// </summary>
             /// <param name="aAction">The Action to handle.</param>
             /// <param name="aCancellationToken">Propagates notification that operations should be canceled.</param>
-            /// <returns>A <see cref"Task{Unit}"/> instance.</returns>
+            /// <returns>A <see cref="Task{Unit}"/> instance.</returns>
             public override Task<Unit> Handle(HeroesState.DestroyAction aAction, CancellationToken aCancellationToken)
             {
                 // TODO: Make service call.
