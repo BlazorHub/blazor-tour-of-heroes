@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using BlazorState;
@@ -31,6 +32,11 @@ namespace TourOfHeroes.Web.Common.State.Heroes
             // Provides a way for the tests to hydrate the state.
             // Otherwise, it's just the handler that should do anything with state.
             ThrowIfNotTestAssembly(Assembly.GetCallingAssembly());
+
+            if (aKeyValuePairs == null)
+            {
+                throw new ArgumentNullException(nameof(aKeyValuePairs));
+            }
 
             Heroes = aKeyValuePairs[nameof(Heroes)] as IReadOnlyCollection<Hero>;
 

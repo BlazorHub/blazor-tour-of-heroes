@@ -26,7 +26,7 @@ namespace TourOfHeroes.Web.Tests.Helpers
         private protected readonly Mock<IStore> _mockStore;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BaseHeroStateTestSetup"/> class.
+        /// Initializes a new instance of the <see cref="BaseStoreTestSetup"/> class.
         /// </summary>
         public BaseStoreTestSetup()
         {

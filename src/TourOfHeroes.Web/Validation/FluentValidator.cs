@@ -19,12 +19,13 @@ namespace TourOfHeroes.Web.Validation
 
         [CascadingParameter] private EditContext EditContext { get; set; }
 
+        /// <inheritdoc/>
         protected override void OnInitialized()
         {
             validator = new TValidator();
             var messages = new ValidationMessageStore(EditContext);
 
-            // Revalidate when any field changes, or if the entire form requests validation
+            // Re-validate when any field changes, or if the entire form requests validation
             // (e.g., on submit)
 
             EditContext.OnFieldChanged += (sender, eventArgs)
