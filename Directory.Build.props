@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>8</LangVersion>
+    <Features>strict</Features>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Common ruleset shared by all projects -->
+    <CodeAnalysisRuleset>$(MSBuildThisFileDirectory)StyleCop.ruleset</CodeAnalysisRuleset>
+  </PropertyGroup>
+</Project>
