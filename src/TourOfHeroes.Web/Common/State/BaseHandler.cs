@@ -21,7 +21,7 @@ namespace TourOfHeroes.Web.Common.State
         protected DetailsState DetailsState => Store.GetState<DetailsState>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BaseHandler"/> class.
+        ///
         /// </summary>
         /// <param name="store">The single source of truth to create with.</param>
         public BaseHandler(IStore store)

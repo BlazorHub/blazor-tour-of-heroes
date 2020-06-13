@@ -5,6 +5,7 @@ using TourOfHeroes.Web.Common.State.Heroes;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using TourOfHeroes.Web.Common.Models;
+using System;
 
 namespace TourOfHeroes.Web.Common.Containers.Search
 {
@@ -31,7 +32,7 @@ namespace TourOfHeroes.Web.Common.Containers.Search
             set
             {
                 // Bit hacky but it works.
-                NavigationManager.NavigateTo($"/details/{value.Id}");
+                NavigationManager.NavigateTo($"/details/{value?.Id}");
             }
         }
 
@@ -51,8 +52,8 @@ namespace TourOfHeroes.Web.Common.Containers.Search
         protected async Task<IEnumerable<Hero>> SearchHeroes(string query)
         {
             return await Task.FromResult(HeroesState.Heroes
-                .Where(hero => hero.Name.ToLowerInvariant()
-                    .Contains(query.ToLowerInvariant())));
+                .Where(hero => hero.Name.Contains(query, StringComparison.InvariantCultureIgnoreCase)))
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

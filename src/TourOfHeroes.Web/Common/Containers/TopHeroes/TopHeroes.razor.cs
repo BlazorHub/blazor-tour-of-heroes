@@ -24,7 +24,7 @@ namespace TourOfHeroes.Web.Common.Containers.TopHeroes
         /// <summary>
         /// Send the user to the details page.
         /// </summary>
-        /// <param name="id">The ID of the <see cref="Hero"/> to view details for.</param>
+        /// <param name="id">The id of the Hero to view details for.</param>
         protected void NavigateToHeroDetails(int id)
         {
             NavigationManager.NavigateTo($"/details/{id}");

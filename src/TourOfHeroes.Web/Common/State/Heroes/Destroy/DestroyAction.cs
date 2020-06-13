@@ -6,12 +6,12 @@ namespace TourOfHeroes.Web.Common.State.Heroes
     public partial class HeroesState
     {
         /// <summary>
-        /// Action for destroying a <see cref="Hero"/>.
+        /// Action for destroying a Hero.
         /// </summary>
         public class DestroyAction : IAction
         {
             /// <summary>
-            /// Gets the ID of the <see cref="Hero"/>.
+            /// Gets the id of the Hero.
             /// </summary>
             public int Id { get; }
 
