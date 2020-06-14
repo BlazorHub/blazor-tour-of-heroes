@@ -8,12 +8,12 @@ using Xunit;
 namespace TourOfHeroes.Web.Tests.Common.State.Details.RetrieveOne
 {
     /// <summary>
-    /// Unit tests for <see cref="HeroesState.HandleRetrieveOne"/>.
+    /// Unit tests for <see cref="DetailsState.HandleRetrieveOne"/>.
     /// </summary>
     public class HandleRetrieveOneTests : BaseStoreTestSetup
     {
         /// <summary>
-        /// The <see cref="HeroesState.HandleRetrieveOne"/> to test with.
+        /// The <see cref="DetailsState.HandleRetrieveOne"/> to test with.
         /// </summary>
         private readonly DetailsState.HandleRetrieveOne _handleRetrieveOne;
 

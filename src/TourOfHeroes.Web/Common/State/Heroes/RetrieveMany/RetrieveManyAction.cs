@@ -6,7 +6,7 @@ namespace TourOfHeroes.Web.Common.State.Heroes
     public partial class HeroesState
     {
         /// <summary>
-        /// Action for retreiving a <see cref="Hero"/>.
+        /// Action for retrieving a Hero.
         /// </summary>
         public class RetrieveManyAction : IAction
         {

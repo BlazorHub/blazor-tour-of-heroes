@@ -6,7 +6,7 @@ using Xunit;
 namespace TourOfHeroes.Web.Tests.Common.State.Details.Modify
 {
     /// <summary>
-    /// Unit tests for <see cref="HeroesState.ModifyAction"/>.
+    /// Unit tests for Modify Action.
     /// </summary>
     public class ModifyActionTests
     {

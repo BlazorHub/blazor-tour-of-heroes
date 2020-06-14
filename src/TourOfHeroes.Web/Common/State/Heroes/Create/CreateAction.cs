@@ -7,12 +7,12 @@ namespace TourOfHeroes.Web.Common.State.Heroes
     public partial class HeroesState
     {
         /// <summary>
-        /// Action for creating a <see cref="Hero"/>.
+        /// Action for creating a Hero.
         /// </summary>
         public class CreateAction : IAction
         {
             /// <summary>
-            /// Gets the name of the <see cref="Hero"/>.
+            /// Gets the name of the Hero.
             /// </summary>
             public string Name { get; }
 
